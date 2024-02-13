@@ -133,7 +133,7 @@
   <div class="download-icon-1"></div>
   <div class="brown-linkedln-icon-1"><i class='bx bxl-linkedin-square'></i></div>
   <div class="brown-email-icon-1" ><i class='bx bx-envelope'></i></div>
-  <div class="github-brown-icon-1"></div>
+  <div class="github-brown-icon-1"><i class='bx bxl-github' ></i></div> 
 </div>
 </template>
 <script>
@@ -317,13 +317,13 @@ export default {
   top: 343px;
   object-fit: cover;
 }
-.brown-linkedln-icon-1 {
-  width: 46px;
-  height: 42px;
+.brown-linkedln-icon-1 i {
+  color: #000000;
+  font-size: 2rem;
   position: absolute;
   left: 611px;
-  top: 427px;
-  object-fit: cover;
+  top: 400px;
+  right: 700px;
 }
 .brown-email-icon-1 i {
   color: #FFF5E2;  
@@ -332,12 +332,12 @@ export default {
   top: 400px;
   right: 700px;
 }
-.github-brown-icon-1 {
-  width: 42px;
-  height: 42px;
+.github-brown-icon-1 i {
+  color: #ffffff;
+  font-size: 2rem;
   position: absolute;
-  left: 673px;
-  top: 428px;
-  object-fit: cover;
+  left: 755px;
+  top: 420px;  
+  
 }
 </style>
