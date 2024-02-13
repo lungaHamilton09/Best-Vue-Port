@@ -111,29 +111,30 @@
       </defs>
     </svg>
     <div class="group-10">
-      <div class="group-9">
-        <div class="group-8">
+      <div class="lunga-momoza">Lunga Momoza</div>
           <div class="group-7">
-            <div class="lunga-momoza">Lunga Momoza</div>
-            <div class="about">About</div>
-            <div class="experience">Experience</div>
-            <div class="projects">Projects</div>
-            <div class="contact">Contact</div>
+            <div class="about">
+              <a href="#about">About</a></div>
+            <div class="experience">
+              <a href="#experience">Experience</a></div>
+            <div class="projects">
+              <a href="#projects">Projects</a></div>
+            <div class="contact">
+              <a href="#contact">Contact</a></div>
           </div>
-        </div>
-      </div>
     </div>
-    <div class="hello-i-m">Hello, I’m</div>
-    <div class="lunga-momoza2">Lunga Momoza</div>
-    <div class="software-developer">Software Developer</div>
-    <!-- <img class="ellipse-1" src="ellipse-10.png" /> -->
-    <!-- <div class="download-cv">Download CV</div>
-    <div class="contact-info">Contact Info</div>
-    <img class="download-icon-1" src="download-icon-10.png" />
-    <img class="brown-linkedln-icon-1" src="brown-linkedln-icon-10.png" />
-    <img class="brown-email-icon-1" src="brown-email-icon-10.png" />
-    <img class="github-brown-icon-1" src="github-brown-icon-10.png" />
-  </div> -->
+    <div class="home-content">
+  <div class="hello-i-m">Hello, I’m</div>
+  <div class="lunga-momoza2">Lunga Momoza</div>
+  <div class="software-developer">Software Developer</div>
+  <img class="ellipse-1" src="../public/ellipse-10.png" />
+  <button class="download-cv">Download CV</button>
+  <button class="contact-info">Contact Info</button>
+  <div class="download-icon-1"></div>
+  <div class="brown-linkedln-icon-1"><i class='bx bxl-linkedin-square'></i></div>
+  <div class="brown-email-icon-1" ><i class='bx bx-envelope'></i></div>
+  <div class="github-brown-icon-1"></div>
+</div>
 </template>
 <script>
 export default {
@@ -144,8 +145,9 @@ export default {
 };
 </script>
 <style scoped>
+@import 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css';
 .home,
-.home * {
+ * {
   box-sizing: border-box;
 }
 .home {
@@ -160,54 +162,38 @@ export default {
 }
 .rectangle-20 {
   background: #fff5e2;
-  width: 950px;
-  height: 600px;
+  width: 100%;
+  height: 100vh;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 .rectangle-13 {
-  width: 959px;
-  height: 369px;
+  width: 100%;
+  height: auto;
   position: absolute;
   left: -9px;
   top: 0px;
   overflow: visible;
 }
-.rectangle-11 {
-  width: 127px;
-  height: 37px;
-  position: absolute;
-  left: 473px;
-  top: 332px;
-  overflow: visible;
-}
+
 .contact-info {
   width: 117px;
   height: 37px;
   position: absolute;
-  left: 679px;
-  top: 332px;
+  left: 849px;
+  top: 339px;
   overflow: visible;
 }
 .group-10 {
   position: absolute;
-  inset: 0;
-}
-.group-9 {
-  width: 862px;
-  height: 19px;
-  position: static;
-}
-.group-8 {
-  width: 862px;
-  height: 19px;
-  position: static;
+  top: 0;
+  width: 100%;
 }
 .group-7 {
   width: 862px;
   height: 19px;
-  position: static;
+  text-align: right;
 }
 .lunga-momoza {
   color: #efd6b5;
@@ -219,44 +205,44 @@ export default {
   left: 50px;
   top: 24px;
 }
-.about {
+.about a {
   color: #efd6b5;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
-  left: 541px;
+  right: 700px;
   top: 24px;
 }
-.experience {
+.experience a {
   color: #efd6b5;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
-  left: 639px;
+  right: 500px;
   top: 24px;
 }
-.projects {
+.projects a {
   color: #efd6b5;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
-  left: 751px;
+  right: 320px;
   top: 24px;
 }
-.contact {
+.contact a {
   color: #efd6b5;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
-  left: 849px;
+  right: 150px;
   top: 24px;
 }
 .hello-i-m {
@@ -266,7 +252,7 @@ export default {
   font-size: 20px;
   font-weight: 600;
   position: absolute;
-  left: 556px;
+  right: 650px;
   top: 123px;
 }
 .lunga-momoza2 {
@@ -276,7 +262,7 @@ export default {
   font-size: 36px;
   font-weight: 800;
   position: absolute;
-  left: 500px;
+  right: 500px;
   top: 171px;
   -webkit-text-stroke: 1px transparent;
 }
@@ -287,8 +273,8 @@ export default {
   font-size: 20px;
   font-weight: 600;
   position: absolute;
-  left: 526px;
-  top: 226px;
+  right: 575px;
+  top: 240px;
   -webkit-text-stroke: 1px transparent;
 }
 .ellipse-1 {
@@ -318,8 +304,8 @@ export default {
   font-size: 12px;
   font-weight: 400;
   position: absolute;
-  left: 699px;
-  top: 346px;
+  left: 849px;
+  top: px;
 }
 
 .download-icon-1 {
@@ -339,13 +325,12 @@ export default {
   top: 427px;
   object-fit: cover;
 }
-.brown-email-icon-1 {
-  width: 51px;
-  height: 40px;
+.brown-email-icon-1 i {
+  color: #FFF5E2;  
+  font-size: 2rem;
   position: absolute;
-  left: 547px;
-  top: 428px;
-  object-fit: cover;
+  top: 400px;
+  right: 700px;
 }
 .github-brown-icon-1 {
   width: 42px;
