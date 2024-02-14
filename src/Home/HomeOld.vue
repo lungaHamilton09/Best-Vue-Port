@@ -127,7 +127,7 @@
   <div class="hello-i-m">Hello, I’m</div>
   <div class="lunga-momoza2">Lunga Momoza</div>
   <div class="software-developer">Software Developer</div>
-  <img class="ellipse-1" src="../public/ellipse-10.png" />
+  <img class="ellipse-1" src="./public/ellipse-10.png" />
   <button class="download-cv">Download CV</button>
   <button class="contact-info">Contact Info</button>
   <div class="download-icon-1"></div>

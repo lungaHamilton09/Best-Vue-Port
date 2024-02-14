@@ -1,17 +1,20 @@
 
 <template>
-  <Home  />
+  <div>
+    <HomeCard />
+  </div>
+
 </template>
 
 <script>
-import Home from "./Home/Home.vue";
-import "./vars.css";
-import "./styles.css";
+import HomeCard from "./Home/HomeCard.vue";
+// import "./vars.css";
+// import "./styles.css";
 
 export default {
   name: "App",
   components: {
-    Home: Home,
+    HomeCard
   },
 };
 </script>
