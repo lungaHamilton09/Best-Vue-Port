@@ -3,6 +3,8 @@
 
   <!-- home section  -->
   <div class="main-container">
+    <div class="left-section"></div>
+    <div class="right-section"></div>
 
     <div class="image-container">
       <img src="../images/IMG_1691.jpg" alt="#" class="hero-image">
@@ -75,8 +77,8 @@ export default {
   width: 100%;
   height: 100vh;
   /* height: 100%; */
-  /* make my container split horizontally with these 2 colors */
-  /* background-color: #664229; */
+  /*make my container split horizontally with these 2 colors */
+   background-color: #664229;
   background-color: #FFF5E2;
 
 }
