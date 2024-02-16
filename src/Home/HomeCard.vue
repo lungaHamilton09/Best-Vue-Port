@@ -1,10 +1,21 @@
 <template>
-  <nav></nav>
 
-  <!-- home section  -->
+<!-- home section  -->
   <div class="main-container">
     <div class="left-section"></div>
     <div class="right-section"></div>
+
+    <nav id="desktop-nav">
+    <div class="logo">Lunga Momoza</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
     <div class="image-container">
       <img src="../images/IMG_1691.jpg" alt="#" class="hero-image">
