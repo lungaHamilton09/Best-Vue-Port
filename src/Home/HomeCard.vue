@@ -25,13 +25,13 @@
 
       <div class="home-links-container">
         <a href="">
-          <img src="#" alt="mail" class="icon">
+          <img src="../images/Brown_email_icon-removebg-preview.png" alt="mail" class="social-icon">
         </a>
         <a href="">
-          <img src="#" alt="linkedin" class="icon">
+          <img src="../images/Brown_Linkedln_icon-removebg-preview.png" alt="linkedin" class="social-icon">
         </a>
         <a href="">
-          <img src="#" alt="github" class="icon">
+          <img src="../images/Github_Brown_Icon-removebg-preview.png" alt="github" class="social-icon">
         </a>
       </div>
     </div>
@@ -102,7 +102,7 @@ export default {
   align-items: center;
   width: 60vw;
   height: 100%;
-  background-color: rgb(131, 66, 66);
+  background-color: #FFF5E2;
 }
 .home-inner-text {
   display: flex;
@@ -111,15 +111,26 @@ export default {
   align-items: center;
   /* gap: 1rem; */
 }
-.home-button-container {
 
+
+.home-button-container {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
 }
 .home-links-container {
 
 }
 .home-links-container a {
   text-decoration: none;
-  color: white;
+  color:#664229 ; 
+  
+}
+.social-icon {
+  width: 2.2rem;
+  text-decoration: none;
+  
 }
 
 /* about section */
