@@ -33,9 +33,10 @@
 
       <div class="something">
         <div class="home-button-container">
+    
           <button class="Button">Download CV</button>
           <button class="Button">Contact Info</button>
-        </div>
+        </div> 
 
         <div class="home-links-container">
           <a href="">
@@ -61,13 +62,31 @@
   <div class="about-container">
 
     <div class="about-image-container">
-      <img src="../images/IMG_1691.jpg" alt="#" class="hero-image">
+      <img src="../images/IMG_7093.jpg" alt="#" class="hero-image">
     </div>
 
     <div class="about-text-container">
       <h1>Heading</h1>
-      <div class="experience-boxes"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad enim ab obcaecati, harum quae. Soluta aspernatur provident deleniti enim debitis cupiditate ut modi corporis cum? Nam pariatur non id.</p>
+  
+      <div class="experience-boxes">
+      <div>Experience</div>
+      <a href="">
+        <img src="../images/Experience-icon.png" alt="experience" class="experience-icon">
+      </a>
+      <p>6+ Months
+         Frontend 
+         Development.</p>
+
+      <div>Education</div>
+      <a href="">
+        <img src="../images/Education-icon.png" alt="education" class="education-icon">
+      </a>
+      <p> BCOM. 
+          Bachelors 
+          Degree.</p>
+      </div>
+      
+      <p>As a highly motivated and dynamic software developer, I am deeply commited to crafting high-end technological solutions and innovative software. My passion lies in creating user-interactive applications that significantly elevate customer experiences. Eager to contribute to the rapid growth of the technological landscape, I aspire to be an integral part of teams driving innovation and excellence in the field of tech and software</p>
     </div>
   </div>
 
@@ -210,8 +229,27 @@ export default {
 
 /* about section */
 .about-container {
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 100vh;
+}
+.hero-image {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;  
+}
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
 
 }
+
+
+
 
 /* font styles */
 .font-text-small {
