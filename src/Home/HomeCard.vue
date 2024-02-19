@@ -16,9 +16,6 @@
   <div class="main-container">
     <div class="wallpaper"></div>
 
-
-
-
     <div class="image-container">
       <img src="../images/IMG_1691.jpg" alt="#" class="hero-image">
     </div>
@@ -29,7 +26,9 @@
         <h1 class="font-text-small">Hello, I'm </h1>
         <br><br>
         <h1 class="font-text-large">Lunga Momoza </h1>
+        <br><br>
         <h1 class="font-text-small">Software Developer</h1>
+        <br><br>
       </div>
 
       <div class="something">
@@ -61,6 +60,15 @@
   <!-- About section -->
   <div class="about-container">
 
+    <div class="about-image-container">
+      <img src="../images/IMG_1691.jpg" alt="#" class="hero-image">
+    </div>
+
+    <div class="about-text-container">
+      <h1>Heading</h1>
+      <div class="experience-boxes"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad enim ab obcaecati, harum quae. Soluta aspernatur provident deleniti enim debitis cupiditate ut modi corporis cum? Nam pariatur non id.</p>
+    </div>
   </div>
 
   <!-- experience section -->
@@ -118,7 +126,7 @@ export default {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(172deg, #664229 49.8%, #FFF5E2 50%);
+  background: linear-gradient(175deg, #664229 49.8%, #FFF5E2 50%);
   z-index: -1;
 }
 
@@ -146,22 +154,23 @@ export default {
 .home-left-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 7rem;
+  gap: 3rem;
+  padding-top: 20vh;
   width: 60vw;
-  height: 100%;
+  height: 100vh;
 }
 .something {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 3rem;
 }
 .home-button-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
 }
 .home-inner-text {
@@ -172,21 +181,21 @@ export default {
   /* gap: 1rem; */
 }
 .Button {
-  background-color: #e2b663;
+  background-color: #D2B48C;
   padding: 1rem 2rem;
   color: white;
+  min-width: 30px;
   /* min-width: 48px; */
 }
 
-
 .home-button-container {
-  width: 300px;
-  height: 50px;
-  padding: 10px 20px;
-  font-size: 18px;
+  width: 100%;
 }
 .home-links-container {
-
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 .home-links-container a {
   text-decoration: none;
@@ -200,7 +209,9 @@ export default {
 }
 
 /* about section */
+.about-container {
 
+}
 
 /* font styles */
 .font-text-small {
