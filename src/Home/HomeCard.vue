@@ -113,6 +113,8 @@
     </div>
   </div>
 
+  
+
   <!-- experience section -->
   <div class="experience-container">
     <h1>
@@ -124,9 +126,6 @@
     <div class="experience-image-container">
       <img src="../images/New Developer icon.jpg" alt="developer-logo" class="developer-icon">
         <!-- floating icons -->
-        <a href="">
-          <img src="../images/git-icon-removebg-preview.png" alt="language" class="language-icon">
-        </a>
     </div>
   </div>
 
@@ -154,7 +153,15 @@
   </div>
 
   <!-- contact section -->
-  <div class="contact-container">
+  <div class="contact-container">\
+    <h1>Send Me A Message</h1>
+    <h1>Drop In My Space</h1>
+    <div class="email-row">
+      <div class="box">
+        <div class="cube">
+        </div>
+      </div>
+    </div>
 
   </div>
 
@@ -386,7 +393,7 @@ export default {
   width: 360px;
   height: 320px;
   /* outline: #664229 1px solid; */
-  background-color: #c98c60;
+  background-color: #664229; 
 }
 .card-img {
   width: fit-content;
@@ -395,6 +402,35 @@ export default {
 
 }
 
+/* contact section */
+.contact-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 100vw;
+  height: 100vh;
+  gap: 2rem;
+  background-color: #664229;
+}
+.box {
+  padding-top: 10px;
+  border-radius: 5%;
+  text-align: center;
+  width: 360px;
+  height: 320px;
+  background-color: #FFF5E2;
+}
+.cube {
+  padding-top: 10px;
+  border-radius: 5%;
+  text-align: center;
+  width: 360px;
+  height: 320px;
+  background-color: #FFF5E2;
+}
 /* font styles */
 .font-text-small {
   font-family: Arial, Helvetica, sans-serif;
