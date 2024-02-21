@@ -74,8 +74,10 @@
             <h1>Experience</h1>
             <p>
               6+ Months <br>
-              Frontend <br>
-              Development. <br>
+              Front-End Software Developer <br>
+              ABSA/Capaciti <br>
+              Venture Capital Intern Consultant <br>
+              Crypto Valley Venture Capital, Africa (CVVC). <br>
             </p>
           </div>
           <div>
@@ -89,9 +91,10 @@
           <div>
             <h1>Education</h1>
             <p> 
-              BCOM. <br>
-              Bachelors <br>
-              Degree. <br>
+              Bcom Bachelors Degree. <br>
+              Investec Entrepreneurship Certification <br>
+              Stellenbosch University Launchlab Startup Incubation <br> 
+              Stellenbosch University. <br>
             </p>
           </div>
           <div>
@@ -121,6 +124,9 @@
     <div class="experience-image-container">
       <img src="../images/New Developer icon.jpg" alt="developer-logo" class="developer-icon">
         <!-- floating icons -->
+        <a href="">
+          <img src="../images/git-icon-removebg-preview.png" alt="language" class="language-icon">
+        </a>
     </div>
   </div>
 
@@ -306,6 +312,7 @@ export default {
   width: 100%;
   max-width: 65vw;
   padding: 2rem;
+  color: #664229;
 }
 .about-row {
   display: flex;
