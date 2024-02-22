@@ -3,6 +3,7 @@
     <div class="logo">Lunga Momoza</div>
     <div>
       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -13,7 +14,7 @@
 
   
 <!-- home section  -->
-  <div class="main-container">
+  <div class="main-container" id="home">
     <div class="wallpaper"></div>
 
     <div class="image-container">
@@ -59,7 +60,7 @@
 
 
   <!-- About section -->
-  <div class="about-container">
+  <div class="about-container" id="about">
 
     <div class="about-image-container">
       <img src="../images/IMG_7093.jpg" alt="#" class="about-image">
@@ -116,7 +117,7 @@
   
 
   <!-- experience section -->
-  <div class="experience-container">
+  <div class="experience-container" id="experience">
     <h1>
       Explore My 
       <br> 
@@ -124,13 +125,28 @@
     </h1>
 
     <div class="experience-image-container">
-      <img src="../images/New Developer icon.jpg" alt="developer-logo" class="developer-icon">
+      <img src="../images/New_Developer_icon-removebg-preview (1).png" alt="developer-logo" class="developer-icon">
         <!-- floating icons -->
+        <div class="float-icon">
+          <img src="../images/CSS_Icon-removebg-preview (1).png" class="css-icon" alt="">
+        </div>
+        <div class="float-icon">
+          <img src="../images/JS_Icon-removebg-preview.png" class="js-icon" alt="">
+        </div>
+        <div class="float-icon">
+          <img src="../images/Material UI icon.png" class="material-icon" alt="">
+        </div>
+        <div class="float-icon">
+          <img src="../images/git_icon-removebg-preview-removebg-preview.png" class="git-icon" alt="">
+        </div>
+        <div class="float-icon">
+          <img src="../images/Node_JS-removebg-preview.png" class="node-icon" alt="">
+        </div>
     </div>
   </div>
 
   <!-- projects section -->
-  <div class="projects-container">
+  <div class="projects-container" id="projects">
     <h1>Browse My Projects</h1>
     <h1>Projects</h1>
     <div class="project-row">
@@ -153,14 +169,33 @@
   </div>
 
   <!-- contact section -->
-  <div class="contact-container">\
-    <h1>Send Me A Message</h1>
-    <h1>Drop In My Space</h1>
-    <div class="email-row">
-      <div class="box">
-        <div class="cube">
-        </div>
+  <div class="contact-container" id="contact">
+
+    <div class="form-container">
+      <div class="form">
+      <h1>Send Me A Message</h1>
+      <br>
+      <form action="#" method="#">
+        <input type="text" id="name" name="name" required placeholder="Name">
+        <input type="email" id="email" name="email" required placeholder="Email">
+        <textarea id="message" name="message" rows="4" required placeholder="message"></textarea>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+      <div class="cube">
+        <h1 class="font-text-small">Drop In My Space</h1>
+        <br>
+        <br>
+        <h1 class="font-text-medium">I am located in Cape Town the hub of fast growing talent and companies</h1>
+        <br>
+        <h1 class="font-text-xsmall align-center transform-uppercase">Khayelitsha, Cape Town</h1>
+        <br>
+        <h1 class="font-text-xsmall align-center transform-uppercase">Blessedlungamomoza@gmail.com</h1>
+        <br>
+        <h1 class="font-text-xsmall align-center transform-uppercase">+27 67 795 1145</h1>
       </div>
+    </div>
+
     </div>
 
   </div>
@@ -175,6 +210,9 @@ export default {
 </script>
 
 <style scoped>
+html, * {
+  scroll-behavior: smooth;
+}
 #desktop-nav {
   /* max-width: 100vw; */
   width: 100%;
@@ -355,6 +393,7 @@ export default {
   background-color: #664229;
 }
 .experience-image-container {
+  position: relative;
   width: fit-content;
   height: fit-content;
 }
@@ -362,7 +401,36 @@ export default {
   width: 100%;
   min-width: 750px;
 }
-
+.css-icon {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.js-icon {
+  width: 7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.material-icon {
+  width: 7rem;
+  position: absolute;
+  left: -25px;
+  top: 40%;
+}
+.git-icon {
+  width: 4rem;
+  position: absolute;
+  left: -150px;
+  top: 70%;
+}
+.node-icon {
+  width: 8rem;
+  position: absolute;
+  right: -200px;
+  bottom: 25%;
+}
 /* projects section */
 
 .projects-container {
@@ -415,23 +483,107 @@ export default {
   gap: 2rem;
   background-color: #664229;
 }
-.box {
+
+/* form */
+.contact-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    height: 100%;
+  }
+  .form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 650px;
+    height: 100%;
+    min-height: 550px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 370px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  ::placeholder {
+    color: #999;
+  }
+  .form-container {
+    outline: 1px red solid;
+    position: relative;
+  }
+/* .box {
   padding-top: 10px;
   border-radius: 5%;
   text-align: center;
   width: 360px;
   height: 320px;
   background-color: #FFF5E2;
-}
+  left: 100%;
+} */
 .cube {
+  position: absolute;
   padding-top: 10px;
   border-radius: 5%;
   text-align: center;
-  width: 360px;
-  height: 320px;
+  width: 420px;
+  height: 500px;  
   background-color: #FFF5E2;
+  top: 20%;
+  right: -30%;
+  font-size: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
 }
+.align-center {
+  padding-left: 75px;
+}
+.transform-uppercase {
+  text-transform: uppercase;
+}
+
 /* font styles */
+.font-text-xsmall {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+.font-text-medium {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+}
 .font-text-small {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
