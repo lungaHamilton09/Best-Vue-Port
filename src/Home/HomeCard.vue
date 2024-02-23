@@ -35,18 +35,18 @@
       <div class="something">
         <div class="home-button-container">
     
-          <button class="Button">Download CV</button>
-          <button class="Button">Contact Info</button>
+          <button class="Button" href="../images/cv.pdf" @click="downloadCV">Download CV</button>
+          <button class="Button"><a href="#co"></a>Contact Info</button>
         </div> 
 
         <div class="home-links-container">
           <a href="">
             <img src="../images/Brown_email_icon-removebg-preview.png" alt="mail" class="social-icon">
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/lunga-hamilton-momoza-94bb181a7/" target="_blank">
             <img src="../images/Brown_Linkedln_icon-removebg-preview.png" alt="linkedin" class="social-icon">
           </a>
-          <a href="">
+          <a href="https://github.com/lungaHamilton09/Personal-Portfolio">
             <img src="../images/Github_Brown_Icon-removebg-preview.png" alt="github" class="social-icon">
           </a>
         </div>
@@ -137,7 +137,7 @@
           <img src="../images/Material_UI_icon-removebg-preview (1).png" class="material-icon" alt="">
         </div>
         <div class="float-icon">
-          <img src="../images/Material_UI_icon-removebg-preview (1).png" class="git-icon" alt="">
+          <img src="../images/git_icon-removebg-preview-removebg-preview.png" class="git-icon" alt="">
         </div>
         <div class="float-icon">
           <img src="../images/Node_JS-removebg-preview.png" class="node-icon" alt="">
@@ -151,17 +151,24 @@
     <h1>Projects</h1>
     <div class="project-row">
       <div class="card">
-        <img src="../images/banking app.jpg" alt="" class="card-img">
-        <br>
-        <h1>Banking App</h1>
-      </div>
+  <a href="https://github.com/TshepoShale/pythonProject1" target="_blank">
+    <img src="../images/banking app.jpg" alt="Banking App" class="card-img">
+  </a>
+  <br>
+  <h1>Banking App</h1>
+</div>
+
       <div class="card">
-        <img src="../images/healthcare Image icon.png" alt="" class="card-img">
+        <a href="https://keen-tapioca-29c1f9.netlify.app/" target="_blank">
+        <img src="../images/healthcare Image icon.png" alt="Healthcare Website" class="card-img">
+      </a>
         <br>
         <h1>Healthcare Website</h1>
       </div>
       <div class="card">
+        <a href="https://tetris-game-mookgo.netlify.app/game.html" target="_blank">
         <img src="../images/Tetris Game.png" alt="" class="card-img">
+        </a>
         <br>
         <h1>Tetris Game App</h1>
       </div>
@@ -192,8 +199,8 @@
         <br>
         <h1 class="font-text-xsmall align-center transform-uppercase">Blessedlungamomoza@gmail.com</h1>
         <br>
-        <div flex-row="telephone-icon">
-          <h1 class="font-text-xsmall align-center transform-uppercase">+27 67 795 1145</h1>
+        <div class="flex-row align-center">
+          <h1 class="font-text-xsmall transform-uppercase">+27 67 795 1145</h1>
           <img src="../images/brown_telephone_icon-removebg-preview (1).png" alt="telepnone" class="telephone-icon">
         </div>
       </div>
@@ -208,7 +215,16 @@
 
 <script>
 export default {
-  name: 'HomeCard'
+  name: 'HomeCard',
+  methods: {
+    downloadCV() {
+      const cvUrl = "../images/cv.pdf";
+      const anchor = document.createElement("a");
+      anchor.href = cvUrl;
+      anchor.download = "cv.pdf";
+      anchor.click();
+    }
+  }
 }
 </script>
 
@@ -252,7 +268,6 @@ html, * {
   z-index: -1;
 }
 
-/* home section  */
 .main-container {
   position: relative;
   display: flex;
@@ -326,7 +341,19 @@ html, * {
 .social-icon {
   width: 2.2rem;
   text-decoration: none;
-  
+}
+
+/* home section  */
+@media screen and (max-width: 768px) {
+
+  .main-container{
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+  }
+
 }
 
 /* about section */
@@ -381,6 +408,18 @@ html, * {
 .experience-icon {
   width: 100px;
 }
+@media screen and (max-width: 768px) {
+
+.about-container{
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  display: flex;
+}
+}
+
 
 /* experience section */
 
@@ -420,7 +459,7 @@ html, * {
 .material-icon {
   width: 7rem;
   position: absolute;
-  left: -25px;
+  left: -85px;
   top: 40%;
 }
 .git-icon {
@@ -432,8 +471,18 @@ html, * {
 .node-icon {
   width: 8rem;
   position: absolute;
-  right: -200px;
+  right: -150px;
   bottom: 25%;
+}
+@media screen and (max-width: 768px) {
+
+.experience-container{
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
 }
 /* projects section */
 
@@ -473,6 +522,16 @@ html, * {
   height: 260px;
 
 }
+@media screen and (max-width: 768px) {
+
+.project-container{
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
+}
 
 /* contact section */
 .contact-container {
@@ -487,7 +546,17 @@ html, * {
   gap: 2rem;
   background-color: #664229;
 }
+@media screen and (max-width: 768px) {
 
+.contact-container{
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  display: flex;
+}
+}
 /* form */
 .contact-container {
 
@@ -540,7 +609,6 @@ html, * {
     color: #999;
   }
   .form-container {
-    outline: 1px red solid;
     position: relative;
   }
 /* .box {
@@ -570,9 +638,15 @@ html, * {
   justify-content: flex-start;
   gap: 1rem;
 }
-.telephone.icon {
-  width: 100px;
-  height: 50px;
+.telephone-icon {
+  width: 50px;
+
+}
+.flex-row {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
 }
 .align-center {
   padding-left: 75px;
