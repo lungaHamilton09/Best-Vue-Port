@@ -134,10 +134,10 @@
           <img src="../images/JS_Icon-removebg-preview.png" class="js-icon" alt="">
         </div>
         <div class="float-icon">
-          <img src="../images/Material UI icon.png" class="material-icon" alt="">
+          <img src="../images/Material_UI_icon-removebg-preview (1).png" class="material-icon" alt="">
         </div>
         <div class="float-icon">
-          <img src="../images/git_icon-removebg-preview-removebg-preview.png" class="git-icon" alt="">
+          <img src="../images/Material_UI_icon-removebg-preview (1).png" class="git-icon" alt="">
         </div>
         <div class="float-icon">
           <img src="../images/Node_JS-removebg-preview.png" class="node-icon" alt="">
@@ -192,7 +192,10 @@
         <br>
         <h1 class="font-text-xsmall align-center transform-uppercase">Blessedlungamomoza@gmail.com</h1>
         <br>
-        <h1 class="font-text-xsmall align-center transform-uppercase">+27 67 795 1145</h1>
+        <div flex-row="telephone-icon">
+          <h1 class="font-text-xsmall align-center transform-uppercase">+27 67 795 1145</h1>
+          <img src="../images/brown_telephone_icon-removebg-preview (1).png" alt="telepnone" class="telephone-icon">
+        </div>
       </div>
     </div>
 
@@ -566,6 +569,10 @@ html, * {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+}
+.telephone.icon {
+  width: 100px;
+  height: 50px;
 }
 .align-center {
   padding-left: 75px;
