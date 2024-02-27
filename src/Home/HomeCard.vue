@@ -40,13 +40,13 @@
         </div> 
 
         <div class="home-links-container">
-          <a href="">
+          <a href="https://www.linkedin.com/in/lunga-hamilton-momoza-94bb181a7/" target="_blank">
             <img src="../images/Brown_email_icon-removebg-preview.png" alt="mail" class="social-icon">
           </a>
           <a href="https://www.linkedin.com/in/lunga-hamilton-momoza-94bb181a7/" target="_blank">
             <img src="../images/Brown_Linkedln_icon-removebg-preview.png" alt="linkedin" class="social-icon">
           </a>
-          <a href="https://github.com/lungaHamilton09/Personal-Portfolio">
+          <a href="https://github.com/lungaHamilton09/Personal-Portfolio" target="_blank">
             <img src="../images/Github_Brown_Icon-removebg-preview.png" alt="github" class="social-icon">
           </a>
         </div>
